@@ -41,8 +41,9 @@ h3 {
   padding: 12px;
 }
 
-a {
-  margin-right: 20px
+.related-products a{
+  margin-right: 20px;
+  color: red;
 }
 
 .shop-recommended-shoes {
@@ -56,4 +57,14 @@ a {
   display: block;
   width: 60px;
   height: 60px;
+}
+
+.related-products h3{
+  font-size: 30px;
+  text-align: left;
+  background-color: skyblue;
+}
+
+.related-products p{
+  font-size: 20px
 }

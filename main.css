@@ -1,10 +1,15 @@
 .menu div {
   display: inline-block;
   margin-left: 20px;
-  background: yellow;
+  background: white;
 }
 
 .option div {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.settings div {
   display: inline-block;
   margin-right: 20px;
 }
@@ -13,31 +18,58 @@
   text-align: left;
 }
 
+.float_left {
+  float: left;
+  width: 50%;
+}
+
 .right {
   text-align: right;
 }
 
+.float_right {
+  float: right;
+  width: 50%;
+}
+
 body{
-  background-color: skyblue;
+  background-color: white;
 }
 
 header {
-  background: yellow;
+  background: white;
 }
 
 h1 {
   font-size: 40px;
   font-family: serif;
-  color: green;
+  color: white;
 }
 
-.sneakers div {
-  background: pink;
+.sneakers {
+  background: linear-gradient(to right, #f0c, #ff5e00);
   font-family: monospace;
   margin-top: 35px;
+  margin-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
 }
+
+.sneakers img {
+  float: left;
+  width: 100%;
+}
+
+
+
+.clearfix {
+  overflow: auto;
+  scroll-behavior: 1;
+}
+
 footer {
-  background: yellow;
+  background: white;
 }
 
 h3 {
@@ -53,26 +85,29 @@ h3 {
   color: red;
 }
 
-.shop-recommended-shoes {
+.shop-recommended-shoes div{
   display: inline-block;
   width: 30.9%;
-  background-color: red;
-  border: 20px solid red;
+  background: linear-gradient(to right, #f0c, #ff5e00);
+  border: 10px solid red;
   margin-right: -4px;
+  padding: 5px;
+  color: white;
 }
 
 .shoes {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 50%;
+  height: 50%;
+  margin-top: 20px;
 }
 
 .related-products h3{
   font-size: 30px;
   text-align: left;
-  background-color: skyblue;
+  background-color: white;
 }
 
 .related-products p{
-  font-size: 20px
+  font-size: 20px;
 }

@@ -37,3 +37,61 @@ var present = "today";
 console.log("my broken car" + "broke down" + "yesterday");
 console.log("today" + "my broken car" + "broke down");
 console.log("I fixed" + "my broken car" + "today");
+
+function half(number){
+  return number / 2;
+}
+
+var result = half(100);
+console.log(result);
+
+function doubleAndAddTax(price) {
+  var result = price * 2;
+  result = result * 1.07;
+  return result;
+}
+
+console.log(doubleAndAddTax(35));
+
+function sentence (string1, string2){
+  return string1 + string2;
+}
+
+var speech = sentence ("Howdy", "folks!");
+var speech2 = sentence ("Howdy", "folks!");
+
+console.log(speech);
+console.log(speech2);
+
+function difference(number1, number2) {
+  return number1 - number2;
+}
+
+var result = difference(385, 142);
+
+console.log(result);
+
+function multiply(x,y,z) {
+  return x * y * z;
+}
+
+var product = multiply(15, 18, 30);
+console.log(product);
+
+// this will throw a scope error!
+var twoForOneCoupon = true;
+var veggieToppings = ["mushrooms", "spinach", "eggplant"];
+
+function twoToppingPizza(toppings) {
+  var price = 10;
+
+  console.log("You'll get a pizza with " + toppings[0] + " and " + toppings[1]);
+
+  if (twoForOneCoupon === true) {
+    console.log("Nice, you get a second pizza free with this coupon!");
+  }
+  return price;
+}
+
+var money = twoToppingPizza(veggieToppings);
+console.log("It will cost " + money);

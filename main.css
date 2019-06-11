@@ -16,6 +16,7 @@
 
 .left {
   text-align: left;
+  display: block;
 }
 
 .float_left {
@@ -35,10 +36,13 @@
 
 body{
   background-color: white;
+  display: block;
+    margin: 8px;
 }
 
 header {
   background: white;
+  display: block;
 }
 
 h1 {
@@ -80,6 +84,7 @@ h1 {
 
 footer {
   background: white;
+  display: block;
 }
 
 h3 {
@@ -105,6 +110,7 @@ h3 {
 
 .shop-recommended-shoes {
   background: linear-gradient(to right, #f0c, #ff5e00);
+  display: block;
 }
 
 .shoes {

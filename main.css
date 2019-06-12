@@ -98,6 +98,11 @@ h3 {
 .related-products a{
   margin-right: 20px;
   color: red;
+  display: inline-block;
+}
+
+.related-products div{
+  display: block;
 }
 
 .shop-recommended-shoes div{

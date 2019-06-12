@@ -95,3 +95,28 @@ function twoToppingPizza(toppings) {
 
 var money = twoToppingPizza(veggieToppings);
 console.log("It will cost " + money);
+
+console.log($);
+$(".Purchase").click(function(){
+  var currentshoppingcart = $(".shopping-cart span").html();
+  var newsshoppingcart = parseInt(currentshoppingcart) + 1;
+  $(".shopping-cart span").html(newsshoppingcart);
+});
+
+$(".exciting-topics-toggle").click(function(){
+$(".size-and-fit").hide();
+$(".reviews").hide();
+$(".product-details").show();
+});
+
+$(".size-and-fit-toggle").click(function(){
+  $(".product-details").hide();
+  $(".reviews").hide();
+  $(".size-and-fit").show();
+});
+
+$(".review-toggle").click(function(){
+  $(".product-details").hide();
+  $(".size-and-fit").hide();
+  $(".reviews").show();
+});

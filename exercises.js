@@ -42,22 +42,30 @@ function longest(word1, word2) {
     return word2 + " is longer"
   }
 }
-longest("Goodbye", "World")
+
+
+var longestNumber = longest("Goodbye", "World");
+console.log(longestNumber);
 
 // Exercise 4
 // Write a function called isVowel that takes a character (i.e. a string of
 // length 1) and returns true if it is a vowel, uppercase or lowercase. The
 // function should return false if the character is not a vowel.
-function isvowel(words){
+function isvowel(Words){
   var vowels = ["a","e","i","o"];
   var uppercase = ["A","B","C","D"];
   var lowercase = ["a","b","c","d"];
+  var isInArray = vowels.includes(Words);
 
-  if (vowels.indexOf(words) >-1) {
-  console.log(words);
+
+
+  if (vowels.indexOf(Words) >-1) {
+  console.log(Words);
   return true;
 } else {
   return false;
 }
 };
 console.log(isvowel("A"));
+console.log(isvowel("b"));
+console.log(isvowel("d"));
